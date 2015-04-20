@@ -42,15 +42,6 @@ Carto = Carto || {};
                 console.log('Selection changed');
             });
         },
-        setFocus: function (pid, lid) {
-            var coll = this;
-            coll.trigger('focus', pid, lid);
-        },
-        unsetFocus: function () {
-            var coll = this;
-            coll.trigger('unfocus');
-            coll.focus = false;
-        },
         sel: new Sel(),
         selected: function () {
             // return the filtered results
